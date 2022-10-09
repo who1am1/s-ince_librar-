@@ -1,0 +1,80 @@
+object fMain: TfMain
+  Left = 895
+  Height = 498
+  Top = 248
+  Width = 519
+  Caption = 'Выберите раздел'
+  ClientHeight = 498
+  ClientWidth = 519
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.2.2.0'
+  object bBorrow: TButton
+    Left = 144
+    Height = 50
+    Top = 32
+    Width = 220
+    Caption = 'Выдача книги'
+    Font.Height = -25
+    OnClick = bBorrowClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object bReaders: TButton
+    Left = 144
+    Height = 50
+    Top = 272
+    Width = 220
+    Caption = 'Читатели'
+    Font.Height = -25
+    OnClick = bReadersClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object bBooks: TButton
+    Left = 144
+    Height = 50
+    Top = 192
+    Width = 220
+    Caption = 'Список книг'
+    Font.Height = -25
+    OnClick = bBooksClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object bReturn: TButton
+    Left = 144
+    Height = 50
+    Top = 112
+    Width = 220
+    Caption = 'Сдача книги'
+    Font.Height = -25
+    OnClick = bReturnClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object bProfile: TButton
+    Left = 144
+    Height = 50
+    Top = 344
+    Width = 220
+    Caption = 'Профиль'
+    Font.Height = -25
+    OnClick = bProfileClick
+    ParentFont = False
+    TabOrder = 4
+  end
+  object bWorkers: TButton
+    Left = 144
+    Height = 50
+    Top = 416
+    Width = 220
+    Caption = 'Сотрудники'
+    Font.Height = -25
+    OnClick = bWorkersClick
+    ParentFont = False
+    TabOrder = 5
+  end
+end

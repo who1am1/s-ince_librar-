@@ -1,0 +1,74 @@
+object fReturnBook: TfReturnBook
+  Left = 816
+  Height = 415
+  Top = 320
+  Width = 620
+  Caption = 'Сдача книги'
+  ClientHeight = 415
+  ClientWidth = 620
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poMainFormCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.2.2.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 72
+    Top = 0
+    Width = 620
+    Align = alTop
+    ClientHeight = 72
+    ClientWidth = 620
+    TabOrder = 0
+    object bReturn: TSpeedButton
+      Left = 360
+      Height = 28
+      Top = 8
+      Width = 128
+      Caption = 'Сдать книгу'
+      OnClick = bReturnClick
+    end
+    object Label1: TLabel
+      Left = 16
+      Height = 20
+      Top = 8
+      Width = 66
+      Caption = 'Читатель:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 16
+      Height = 20
+      Top = 32
+      Width = 123
+      Caption = 'Тут ФИО читателя'
+      ParentColor = False
+    end
+    object eReturned: TCheckBox
+      Left = 360
+      Height = 24
+      Top = 40
+      Width = 196
+      Caption = 'Показать сданные книги'
+      OnChange = eReturnedChange
+      TabOrder = 0
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 343
+    Top = 72
+    Width = 620
+    Align = alClient
+    ColumnClickSorts = True
+    DefaultColWidth = 130
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goThumbTracking, goDblClickAutoSize, goSmoothScroll, goScrollKeepVisible]
+    RowCount = 1
+    TabOrder = 1
+    OnCompareCells = SGCompareCells
+    OnDblClick = bReturnClick
+    OnPrepareCanvas = SGPrepareCanvas
+  end
+end

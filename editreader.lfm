@@ -1,0 +1,217 @@
+object fEditReader: TfEditReader
+  Left = 684
+  Height = 748
+  Top = 179
+  Width = 536
+  BorderStyle = bsDialog
+  Caption = 'Редактировать'
+  ClientHeight = 748
+  ClientWidth = 536
+  DesignTimePPI = 120
+  OnCloseQuery = FormCloseQuery
+  OnShow = FormShow
+  LCLVersion = '2.2.2.0'
+  object Label1: TLabel
+    Left = 48
+    Height = 28
+    Top = 16
+    Width = 66
+    Caption = 'Номер:'
+    Enabled = False
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 48
+    Height = 28
+    Top = 64
+    Width = 88
+    Caption = 'Фамилия:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object eID: TEdit
+    Left = 304
+    Height = 36
+    Top = 16
+    Width = 204
+    Enabled = False
+    Font.Height = -20
+    ParentFont = False
+    TabOrder = 0
+  end
+  object eSurname: TEdit
+    Left = 304
+    Height = 36
+    Top = 64
+    Width = 204
+    Font.Height = -20
+    MaxLength = 100
+    OnUTF8KeyPress = eSurnameUTF8KeyPress
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 48
+    Height = 28
+    Top = 120
+    Width = 43
+    Caption = 'Имя:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object eName: TEdit
+    Left = 304
+    Height = 36
+    Top = 120
+    Width = 204
+    Font.Height = -20
+    MaxLength = 100
+    OnUTF8KeyPress = eSurnameUTF8KeyPress
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Label4: TLabel
+    Left = 48
+    Height = 28
+    Top = 176
+    Width = 88
+    Caption = 'Отчество:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object ePatronymic: TEdit
+    Left = 304
+    Height = 36
+    Top = 176
+    Width = 204
+    Font.Height = -20
+    MaxLength = 100
+    OnUTF8KeyPress = eSurnameUTF8KeyPress
+    ParentFont = False
+    TabOrder = 3
+  end
+  object eBirthdate: TDateEdit
+    Left = 304
+    Height = 36
+    Top = 232
+    Width = 201
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doDMY
+    ButtonWidth = 29
+    NumGlyphs = 1
+    Font.Height = -20
+    MaxLength = 10
+    ParentFont = False
+    TabOrder = 4
+    Text = '  .  .    '
+  end
+  object Label7: TLabel
+    Left = 48
+    Height = 28
+    Top = 232
+    Width = 145
+    Caption = 'Дата рождения:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 48
+    Height = 28
+    Top = 288
+    Width = 182
+    Caption = 'Адрес проживания:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 48
+    Height = 28
+    Top = 408
+    Width = 158
+    Caption = 'Номер телефона:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object ePhoneNumber: TEdit
+    Left = 304
+    Height = 36
+    Top = 408
+    Width = 204
+    Font.Height = -20
+    MaxLength = 100
+    OnUTF8KeyPress = ePhoneNumberUTF8KeyPress
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Label8: TLabel
+    Left = 48
+    Height = 28
+    Top = 464
+    Width = 181
+    Caption = 'Электронная почта:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object eEmail: TEdit
+    Left = 304
+    Height = 36
+    Top = 464
+    Width = 204
+    Font.Height = -20
+    MaxLength = 100
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Label14: TLabel
+    Left = 48
+    Height = 28
+    Top = 520
+    Width = 132
+    Caption = 'Комментарий:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object eComment: TMemo
+    Left = 304
+    Height = 96
+    Top = 520
+    Width = 204
+    Font.Height = -20
+    MaxLength = 10000
+    ParentFont = False
+    ScrollBars = ssAutoBoth
+    TabOrder = 8
+  end
+  object bSave: TButton
+    Left = 152
+    Height = 56
+    Top = 656
+    Width = 224
+    Caption = 'Сохранить и закрыть'
+    Font.Height = -20
+    OnClick = bSaveClick
+    ParentFont = False
+    TabOrder = 9
+  end
+  object eAddress: TMemo
+    Left = 301
+    Height = 96
+    Top = 288
+    Width = 204
+    Font.Height = -20
+    MaxLength = 1000
+    ParentFont = False
+    ScrollBars = ssAutoBoth
+    TabOrder = 5
+  end
+end

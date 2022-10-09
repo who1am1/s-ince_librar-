@@ -1,0 +1,160 @@
+object fBorrowBook: TfBorrowBook
+  Left = 612
+  Height = 729
+  Top = 146
+  Width = 536
+  Caption = 'Выдача книги'
+  ClientHeight = 729
+  ClientWidth = 536
+  DesignTimePPI = 120
+  OnShow = FormShow
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.2.2.0'
+  object eReader: TComboBox
+    Left = 184
+    Height = 36
+    Top = 40
+    Width = 332
+    Font.Height = -20
+    ItemHeight = 28
+    OnChange = eReaderChange
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 28
+    Top = 40
+    Width = 86
+    Caption = 'Читатель:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object eBook: TComboBox
+    Left = 184
+    Height = 36
+    Top = 224
+    Width = 332
+    Font.Height = -20
+    ItemHeight = 28
+    OnChange = eBookChange
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 28
+    Top = 224
+    Width = 58
+    Caption = 'Книга:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object eReaderInfo: TMemo
+    Left = 184
+    Height = 96
+    Top = 96
+    Width = 332
+    Font.Height = -20
+    MaxLength = 1000
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+  end
+  object eBookInfo: TMemo
+    Left = 184
+    Height = 96
+    Top = 280
+    Width = 332
+    Font.Height = -20
+    MaxLength = 1000
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 3
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 28
+    Top = 468
+    Width = 104
+    Caption = 'Дата сдачи:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object eReturnDate: TDateEdit
+    Left = 315
+    Height = 36
+    Top = 468
+    Width = 201
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doDMY
+    ButtonWidth = 29
+    NumGlyphs = 1
+    Font.Height = -20
+    MaxLength = 10
+    ParentFont = False
+    TabOrder = 5
+    Text = '  .  .    '
+  end
+  object bSave: TButton
+    Left = 152
+    Height = 56
+    Top = 619
+    Width = 224
+    Caption = 'Выдать книгу'
+    Font.Height = -20
+    OnClick = bSaveClick
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 28
+    Top = 538
+    Width = 164
+    Caption = 'Читательский зал:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object eRR: TCheckBox
+    Left = 492
+    Height = 23
+    Top = 543
+    Width = 24
+    OnChange = eRRChange
+    TabOrder = 6
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 28
+    Top = 400
+    Width = 120
+    Caption = 'Дата выдачи:'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object eBorrowDate: TDateEdit
+    Left = 315
+    Height = 36
+    Top = 400
+    Width = 201
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doDMY
+    ButtonWidth = 29
+    NumGlyphs = 1
+    Font.Height = -20
+    MaxLength = 10
+    ParentFont = False
+    TabOrder = 4
+    Text = '  .  .    '
+  end
+end

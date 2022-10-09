@@ -1,0 +1,58 @@
+object fTable: TfTable
+  Left = 874
+  Height = 415
+  Top = 246
+  Width = 620
+  Caption = 'Книги'
+  ClientHeight = 415
+  ClientWidth = 620
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poMainFormCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.2.2.0'
+  object SG: TStringGrid
+    Left = 0
+    Height = 364
+    Top = 51
+    Width = 620
+    Align = alClient
+    ColumnClickSorts = True
+    DefaultColWidth = 130
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goThumbTracking, goDblClickAutoSize, goSmoothScroll, goScrollKeepVisible]
+    RowCount = 1
+    TabOrder = 0
+    OnCompareCells = SGCompareCells
+    OnDblClick = bEditClick
+    OnPrepareCanvas = SGPrepareCanvas
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 51
+    Top = 0
+    Width = 620
+    Align = alTop
+    ClientHeight = 51
+    ClientWidth = 620
+    TabOrder = 1
+    object bAdd: TSpeedButton
+      Left = 32
+      Height = 28
+      Top = 8
+      Width = 120
+      Caption = 'Добавить'
+      OnClick = bAddClick
+      ParentFont = False
+    end
+    object bEdit: TSpeedButton
+      Left = 176
+      Height = 28
+      Top = 8
+      Width = 128
+      Caption = 'Редактировать'
+      OnClick = bEditClick
+    end
+  end
+end

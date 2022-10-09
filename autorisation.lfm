@@ -1,0 +1,206 @@
+object fAuto: TfAuto
+  Left = 923
+  Height = 294
+  Top = 290
+  Width = 433
+  Caption = 'Авторизация'
+  ClientHeight = 294
+  ClientWidth = 433
+  DesignTimePPI = 120
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object eLogin: TEdit
+    Left = 168
+    Height = 28
+    Top = 64
+    Width = 176
+    TabOrder = 0
+  end
+  object ePassword: TEdit
+    Left = 168
+    Height = 28
+    Top = 128
+    Width = 176
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 96
+    Height = 20
+    Top = 64
+    Width = 43
+    Caption = 'Логин'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 96
+    Height = 20
+    Top = 133
+    Width = 53
+    Caption = 'Пароль'
+    ParentColor = False
+  end
+  object bSend: TButton
+    Left = 176
+    Height = 31
+    Top = 208
+    Width = 94
+    Caption = 'Войти'
+    OnClick = bSendClick
+    TabOrder = 2
+  end
+  object SQLConnection: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'C:\Users\maksi\OneDrive\Рабочий стол\Программа по курсовой\science_library.db'
+    KeepConnection = False
+    Transaction = SQLTransaction
+    CharSet = 'UTF8'
+    AlwaysUseBigint = False
+    Left = 56
+    Top = 192
+  end
+  object SQLTransaction: TSQLTransaction
+    Active = True
+    Database = SQLConnection
+    Left = 40
+    Top = 8
+  end
+  object SQLQ: TSQLQuery
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'login'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'password'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'role'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'edit_emp_ability'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'edit_book_ability'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'surname'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'name'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'patronymic'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'birthdate'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'gender'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'active_profile'
+        DataType = ftBoolean
+        Precision = -1
+      end>
+    Database = SQLConnection
+    Transaction = SQLTransaction
+    SQL.Strings = (
+      ''
+    )
+    Params = <>
+    Macros = <>
+    Left = 152
+    Top = 8
+  end
+  object SQLQ1: TSQLQuery
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'login'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'password'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'role'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'edit_emp_ability'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'edit_book_ability'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'surname'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'name'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'patronymic'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'birthdate'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'gender'
+        DataType = ftMemo
+        Precision = -1
+      end    
+      item
+        Name = 'active_profile'
+        DataType = ftBoolean
+        Precision = -1
+      end>
+    Database = SQLConnection
+    Transaction = SQLTransaction
+    SQL.Strings = (
+      ''
+    )
+    Params = <>
+    Macros = <>
+    Left = 216
+    Top = 8
+  end
+end

@@ -1,0 +1,54 @@
+object fSave: TfSave
+  Left = 664
+  Height = 213
+  Top = 231
+  Width = 424
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Сохранение данных'
+  ClientHeight = 213
+  ClientWidth = 424
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.2.0'
+  object Label1: TLabel
+    Left = 40
+    Height = 31
+    Top = 48
+    Width = 342
+    Caption = 'Сохранить измененные данные?'
+    Font.Height = -23
+    ParentColor = False
+    ParentFont = False
+  end
+  object bYes: TBitBtn
+    Left = 88
+    Height = 38
+    Top = 136
+    Width = 94
+    Caption = 'Да'
+    Font.Height = -20
+    Kind = bkYes
+    ModalResult = 6
+    OnClick = bYesClick
+    ParentFont = False
+    Spacing = 6
+    TabOrder = 0
+  end
+  object bNo: TBitBtn
+    Left = 232
+    Height = 38
+    Top = 136
+    Width = 94
+    Cancel = True
+    Caption = 'Нет'
+    Font.Height = -20
+    Kind = bkNo
+    ModalResult = 7
+    OnClick = bNoClick
+    ParentFont = False
+    Spacing = 6
+    TabOrder = 1
+  end
+end
